@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<property>
+	<name>smtp-host</name>
+	<value>smtp.hogehoge.hoge</value>
+</property>
+<property>
+	<name>mail-host</name>
+	<value>myhost</value>
+</property>
+<property>
+	<name>smtp-port</name>
+	<value>25</value>
+</property>
+<property>
+	<name>smtp-from</name>
+	<value>takei_s_returnto@anonymous.anonymous</value>
+</property>
+<property>
+	<name>mail-from</name>
+	<value>takei_s@anonymous.anonymous</value>
+</property>
+
+</xml>
