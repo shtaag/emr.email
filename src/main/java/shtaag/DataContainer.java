@@ -20,6 +20,7 @@ public class DataContainer {
 	
 	private Properties props;
 	private String mailFrom;
+	private String mailTo;
 	private Text rawValue;
 	
 	private String body;
@@ -39,7 +40,7 @@ public class DataContainer {
 	
 	public Address[] getRecipients() {
 		try {
-			return InternetAddress.parse(mailFrom, true);
+			return InternetAddress.parse(mailTo, true);
 		} catch (AddressException e) {
 			e.printStackTrace();
 			throw new RuntimeException(e);
@@ -68,6 +69,7 @@ public class DataContainer {
 	}
 	
 	private void parseText(Text rawValue) {
+		this.mailTo = "not yet";
 		this.body = "not yet";
 		this.subject = "not yet";
 	}
